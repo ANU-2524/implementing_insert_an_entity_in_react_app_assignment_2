@@ -36,6 +36,7 @@ const Dashboard = () => {
       <header className="dashboard-header">
         <h1>Movie Collection</h1>
       </header>
+      <button onClick={()=>navigate("/add-movie")}>Add Movie !</button>
       <div className="movie-list">
         {movies.map((movie) => (
           <MovieCard key={movie.id} movie={movie} />
